@@ -504,20 +504,20 @@ a:hover {
     left: 0;
 }
 
-/* ===== VERSIONS SECTION ===== */
-.versions {
+/* ===== FEATURES SECTION ===== */
+.features {
     padding: var(--spacing-xxl) 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
-.versions-grid {
+.features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-lg);
     margin-top: var(--spacing-xl);
 }
 
-.version-card {
+.feature-card {
     background: var(--white);
     border-radius: var(--border-radius-lg);
     padding: var(--spacing-xl);
@@ -525,72 +525,39 @@ a:hover {
     transition: var(--transition-normal);
     position: relative;
     border: 2px solid transparent;
+    text-align: center;
 }
 
-.version-card:hover {
+.feature-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-xl);
+    border-color: var(--primary-blue);
 }
 
-.version-card.premium {
-    border-color: var(--gold);
-    transform: scale(1.05);
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-lg);
+    color: var(--white);
+    font-size: 2rem;
 }
 
-.version-card.premium:hover {
-    transform: scale(1.05) translateY(-4px);
-}
-
-.version-badge {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--gold);
-    color: var(--black);
-    padding: var(--spacing-xs) var(--spacing-md);
-    border-radius: var(--border-radius-md);
-    font-size: 0.875rem;
+.feature-card h3 {
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
-.version-header {
-    text-align: center;
-    margin-bottom: var(--spacing-lg);
-}
-
-.version-header h3 {
-    color: var(--primary-blue);
-    margin-bottom: var(--spacing-xs);
-}
-
-.version-price {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary-red);
-}
-
-.version-price span {
+.feature-card p {
+    color: var(--medium-gray);
+    line-height: 1.6;
     font-size: 1rem;
-    color: var(--medium-gray);
-}
-
-.version-features {
-    list-style: none;
-    margin-bottom: var(--spacing-lg);
-}
-
-.version-features li {
-    padding: var(--spacing-xs) 0;
-    color: var(--medium-gray);
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-}
-
-.version-features i {
-    color: var(--primary-red);
-    font-size: 0.875rem;
 }
 
 /* ===== CONTACT SECTION ===== */
@@ -957,17 +924,7 @@ a:hover {
         grid-template-columns: 1fr;
     }
     
-    .versions-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .version-card.premium {
-        transform: none;
-    }
-    
-    .version-card.premium:hover {
-        transform: translateY(-4px);
-    }
+
     
     .contact-container {
         grid-template-columns: 1fr;
@@ -1046,8 +1003,7 @@ a:hover {
     }
 }
 
-.feature-card,
-.version-card {
+.feature-card {
     animation: fadeInUp 0.6s ease-out;
 }
 

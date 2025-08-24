@@ -109,7 +109,7 @@ function initContactForm() {
             // Validate form
             if (validateForm(data)) {
                 // Show success message
-                showNotification('¡Gracias! Te contactaremos pronto.', 'success');
+                showNotification('¡Gracias! Te responderemos pronto.', 'success');
                 
                 // Reset form
                 this.reset();
@@ -125,7 +125,7 @@ function initContactForm() {
 }
 
 function validateForm(data) {
-    const requiredFields = ['name', 'email', 'version', 'privacy'];
+    const requiredFields = ['name', 'email', 'subject', 'message', 'privacy'];
     
     for (let field of requiredFields) {
         if (!data[field] || data[field].trim() === '') {
@@ -217,7 +217,7 @@ function initScrollAnimations() {
     }, observerOptions);
     
     // Observe elements for animation
-    const animateElements = document.querySelectorAll('.feature-card, .version-card, .contact-form');
+    const animateElements = document.querySelectorAll('.feature-card, .contact-form');
     animateElements.forEach(el => {
         observer.observe(el);
     });
@@ -375,7 +375,7 @@ function sendFormData(data) {
         name: data.name,
         email: data.email,
         phone: data.phone,
-        version: data.version,
+        subject: data.subject,
         message: data.message
     });
     */
