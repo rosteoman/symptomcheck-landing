@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom & Medication Tracking Made Easy</title>
+    <meta name="description" content="Professional iOS app for medication tracking, symptom monitoring, and body temperature control. Free, Premium, and Gold versions with predictive AI.">
+    <meta name="keywords" content="medication, symptoms, health, iOS, app, tracking, temperature, AI, medical, wellness">
+    <meta name="author" content="Babenberg Studies">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rosteoman.github.io/symptomtrack-landing/">
+    <meta property="og:title" content="Symptom Track - Seguimiento Inteligente de Salud">
+    <meta property="og:description" content="App iOS profesional para seguimiento de medicación, síntomas y temperatura corporal.">
+    <meta property="og:image" content="https://rosteoman.github.io/symptomtrack-landing/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rosteoman.github.io/symptomtrack-landing/">
+    <meta property="twitter:title" content="Symptom Track - Seguimiento Inteligente de Salud">
+    <meta property="twitter:description" content="App iOS profesional para seguimiento de medicación, síntomas y temperatura corporal.">
+    <meta property="twitter:image" content="https://rosteoman.github.io/symptomtrack-landing/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/SyTrBlLogo.png" alt="Symptom Track Logo" class="logo-image">
+                <span>Symptom Track</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#versions" class="nav-link">Versions</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#download" class="nav-link download-btn">Download</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">Symptom & Medication Tracking Made Easy</span>
+                </h1>
+                <p class="hero-description">
+                    The most comprehensive iOS app for tracking symptoms, medication intake, temperature changes, and sleep patterns. Features include Apple HealthKit integration (Premium), data export (Premium), and predictive AI insights (Gold).
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <i class="fab fa-apple"></i>
+                        Download Free
+                    </a>
+                    <a href="#versions" class="btn btn-secondary">
+                        View Premium Versions
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Versions</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Local Storage</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-preview">
+                            <div class="app-header">
+                                <img src="images/SyTrBlLogo.png" alt="Symptom Track Logo" class="app-logo">
+                                <span>Symptom Track</span>
+                            </div>
+                            <div class="app-content">
+                                <div class="symptom-slider">
+                                    <span>Ansiedad</span>
+                                    <div class="slider-track">
+                                        <div class="slider-fill" style="width: 65%"></div>
+                                    </div>
+                                    <span>6.5</span>
+                                </div>
+                                <div class="medication-grid">
+                                    <div class="med-item taken">D</div>
+                                    <div class="med-item taken">C</div>
+                                    <div class="med-item pending">C</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Medication Management</h3>
+                    <p>Control single, twice, three times, or as-needed daily doses. Clear visual states and intelligent reset with interdependent logic.</p>
+                    <ul class="feature-list">
+                        <li>States: Taken, Not taken, Pending</li>
+                        <li>Reset with long press (3 seconds)</li>
+                        <li>Intelligent logic between doses</li>
+                        <li>Custom notes (150 characters)</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Symptom Tracking</h3>
+                    <p>Monitor symptoms with precise sliders and trend charts with customizable colors.</p>
+                    <ul class="feature-list">
+                        <li>Range 0-10 with 0.1 precision</li>
+                        <li>Predefined and customizable symptoms</li>
+                        <li>Customizable HEX colors</li>
+                        <li>Temporal trend charts</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <h3>Temperature Record</h3>
+                    <p>Precise body temperature recording with automatic alerts and standard categorization.</p>
+                    <ul class="feature-list">
+                        <li>Range 35.0°C - 42.5°C</li>
+                        <li>Automatic Celsius/Fahrenheit conversion</li>
+                        <li>Alerts for anomalous temperatures</li>
+                        <li>Temporal trend charts</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Rest Assessment</h3>
+                    <p>Record sleep duration and quality for a complete analysis of your well-being.</p>
+                    <ul class="feature-list">
+                        <li>Sleep duration</li>
+                        <li>Quality assessment</li>
+                        <li>Specific rest terms</li>
+                        <li>Integration with Apple Healthkit from Premium</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Alarm System</h3>
+                    <p>Customizable alarms for each medication with specific days and predefined options.</p>
+                    <ul class="feature-list">
+                        <li>Specific schedules per medication</li>
+                        <li>Configurable weekdays</li>
+                        <li>Options: Every day, Weekdays, Weekends</li>
+                        <li>Local system notifications</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Multi-language</h3>
+                    <p>Available in 4 languages with complete localization of all functionalities.</p>
+                    <ul class="feature-list">
+                        <li>Spanish (primary)</li>
+                        <li>English</li>
+                        <li>Japanese</li>
+                        <li>Simplified Chinese</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Versions Section -->
+    <section id="versions" class="versions">
+        <div class="container">
+            <h2 class="section-title">Available Versions</h2>
+            <div class="versions-grid">
+                <div class="version-card free">
+                    <div class="version-header">
+                        <h3>Free</h3>
+                        <div class="version-price">Gratis</div>
+                    </div>
+                    <ul class="version-features">
+                        <li><i class="fas fa-check"></i> Complete symptom tracking</li>
+                        <li><i class="fas fa-check"></i> Medication tracking</li>
+                        <li><i class="fas fa-check"></i> Temperature record</li>
+                        <li><i class="fas fa-check"></i> Sleep assessment</li>
+                        <li><i class="fas fa-check"></i> Alarm system</li>
+                        <li><i class="fas fa-check"></i> 4 languages</li>
+                        <li><i class="fas fa-check"></i> Daily notes</li>
+                        <li><i class="fas fa-check"></i> Trend charts</li>
+                    </ul>
+                    <a href="#download" class="btn btn-outline">Download Free</a>
+                </div>
+                
+                <div class="version-card premium">
+                    <div class="version-badge">Popular</div>
+                    <div class="version-header">
+                        <h3>Premium</h3>
+                        <div class="version-price">€9.99<span>/month</span></div>
+                    </div>
+                    <ul class="version-features">
+                        <li><i class="fas fa-check"></i> Everything from Free</li>
+                        <li><i class="fas fa-check"></i> Data export</li>
+                        <li><i class="fas fa-check"></i> Apple HealthKit integration</li>
+                        <li><i class="fas fa-check"></i> Cloud backup</li>
+                        <li><i class="fas fa-check"></i> Ad-free</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Request Access</a>
+                </div>
+                
+                <div class="version-card gold">
+                    <div class="version-badge">Advanced</div>
+                    <div class="version-header">
+                        <h3>Gold</h3>
+                        <div class="version-price">€19.99<span>/month</span></div>
+                    </div>
+                    <ul class="version-features">
+                        <li><i class="fas fa-check"></i> Everything from Premium</li>
+                        <li><i class="fas fa-check"></i> AI Agent "Mother"</li>
+                        <li><i class="fas fa-check"></i> Predictive analysis</li>
+                        <li><i class="fas fa-check"></i> Predictive analysis</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-gold">Request Access</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Interested in Premium Versions?</h2>
+            <p class="section-subtitle">Development is ongoing. Leave us your contact details and specific interests, and we will contact you with more information and release dates.</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Why Choose Paid versions?</h3>
+                    <ul class="contact-benefits">
+                        <li><i class="fas fa-shield-alt"></i> Secure cloud data</li>
+                        <li><i class="fas fa-chart-bar"></i> Advanced features</li>
+                        <li><i class="fas fa-heart"></i> Apple HealthKit integration</li>
+                        <li><i class="fas fa-robot"></i> Predictive AI (Gold)</li>
+                        <li><i class="fas fa-headset"></i> Personalized support</li>
+                    </ul>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="version">Version of interest *</label>
+                        <select id="version" name="version" required>
+                            <option value="">Select a version</option>
+                            <option value="premium">Premium (€9.99/month)</option>
+                            <option value="gold">Gold (€19.99/month)</option>
+                            <option value="both">Both - I want more information</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your specific needs..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">I accept the <a href="#privacy" class="link">privacy policy</a> *</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title">Download Free Now</h2>
+            <p class="section-subtitle">Start tracking your symptoms and don't miss a medication take</p>
+            
+            <div class="download-content">
+                <div class="download-info">
+                    <h3>Available on App Store</h3>
+                    <p>The Free version includes all basic features to start your symptoms tracking.</p>
+                    
+                    <div class="download-features">
+                        <div class="download-feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>iOS 16.0+</span>
+                        </div>
+                        <div class="download-feature">
+                            <i class="fas fa-language"></i>
+                            <span>4 languages</span>
+                        </div>
+                        <div class="download-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>100% private</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="download-button">
+                    <a href="#" class="app-store-btn">
+                        <i class="fab fa-apple"></i>
+                        <div class="app-store-text">
+                            <span>Download on</span>
+                            <strong>App Store</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/SyTrBlLogo.png" alt="Symptom Track Logo" class="logo-image">
+                        <span>Symptom Track</span>
+                    </div>
+                    <p>The easiest and most customizable app for everybody to track symptoms and medications.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Producto</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#versions">Versions</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Use</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> info@babenbergstudios.com</li>
+                        <li><i class="fas fa-globe"></i> babenbergstudios.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Roman Dura Sanz Von Babenberg - Babenberg Studies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Modal -->
+    <div id="privacy" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Política de Privacidad</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h4>1. Información que Recopilamos</h4>
+                <p>Recopilamos información que usted nos proporciona directamente, como cuando crea una cuenta, utiliza nuestros servicios o se comunica con nosotros.</p>
+                
+                <h4>2. Cómo Utilizamos su Información</h4>
+                <p>Utilizamos la información que recopilamos para proporcionar, mantener y mejorar nuestros servicios, comunicarnos con usted y personalizar su experiencia.</p>
+                
+                <h4>3. Compartir Información</h4>
+                <p>No vendemos, alquilamos ni compartimos su información personal con terceros, excepto como se describe en esta política.</p>
+                
+                <h4>4. Seguridad</h4>
+                <p>Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger su información personal.</p>
+                
+                <h4>5. Sus Derechos</h4>
+                <p>Usted tiene derecho a acceder, corregir o eliminar su información personal. Puede ejercer estos derechos contactándonos.</p>
+                
+                <h4>6. Cambios a esta Política</h4>
+                <p>Podemos actualizar esta política de privacidad ocasionalmente. Le notificaremos sobre cualquier cambio significativo.</p>
+                
+                <h4>7. Contacto</h4>
+                <p>Si tiene preguntas sobre esta política de privacidad, contáctenos en info@babenbergstudios.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div id="terms" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Términos de Uso</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h4>1. Aceptación de los Términos</h4>
+                <p>Al utilizar Symptom Track, usted acepta estar sujeto a estos términos de uso.</p>
+                
+                <h4>2. Descripción del Servicio</h4>
+                <p>Symptom Track es una aplicación móvil diseñada para ayudar en el seguimiento de medicación y síntomas. No sustituye el consejo médico profesional.</p>
+                
+                <h4>3. Uso Aceptable</h4>
+                <p>Usted se compromete a utilizar la aplicación solo para fines legales y de acuerdo con estos términos.</p>
+                
+                <h4>4. Limitación de Responsabilidad</h4>
+                <p>La aplicación se proporciona "tal como está" sin garantías. No somos responsables de decisiones médicas basadas en la información de la aplicación.</p>
+                
+                <h4>5. Propiedad Intelectual</h4>
+                <p>Todos los derechos de propiedad intelectual de la aplicación pertenecen a Babenberg Studies.</p>
+                
+                <h4>6. Terminación</h4>
+                <p>Podemos terminar o suspender su acceso a la aplicación en cualquier momento por violación de estos términos.</p>
+                
+                <h4>7. Modificaciones</h4>
+                <p>Nos reservamos el derecho de modificar estos términos en cualquier momento.</p>
+                
+                <h4>8. Contacto</h4>
+                <p>Para preguntas sobre estos términos, contáctenos en info@babenbergstudios.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

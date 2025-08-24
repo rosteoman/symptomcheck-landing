@@ -1,0 +1,13 @@
+# GitHub Pages Configuration
+# Force rebuild and disable Jekyll processing
+plugins:
+  - jekyll-relative-links
+
+# Disable Jekyll processing
+markdown: kramdown
+highlighter: rouge
+
+# Force cache refresh
+exclude:
+  - README.md
+  - .gitignore
